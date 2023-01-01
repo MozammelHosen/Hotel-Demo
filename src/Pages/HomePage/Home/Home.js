@@ -1,4 +1,5 @@
 import React from "react";
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -55,14 +56,20 @@ const Home = () => {
                   Check Box :
                 </span>
               </label>
-              <input type="checkbox" name="check1" id="check5" /> 
-              <label htmlFor="check5"> Single Room </label> 
-              <input type="checkbox" name="check2" id="check6" /> 
-              <label htmlFor="check6"> Double Room</label> <br />
-              <input type="checkbox" name="check1" id="check5" /> 
-              <label htmlFor="check5"> Couple Room </label> 
-              <input type="checkbox" name="check2" id="check6" /> 
-              <label htmlFor="check6"> Family Room</label> 
+              <div
+                style={{
+                  marginTop: "-15px",
+                }}
+              >
+                <input type="checkbox" name="check1" id="check5" />
+                <label htmlFor="check5"> Single Room </label>
+                <input type="checkbox" name="check2" id="check6" />
+                <label htmlFor="check6"> Double Room</label> <br />
+                <input type="checkbox" name="check1" id="check5" />
+                <label htmlFor="check5"> Couple Room </label>
+                <input type="checkbox" name="check2" id="check6" />
+                <label htmlFor="check6"> Family Room</label>
+              </div>
               {/* <input
                 style={{ marginTop: "-10px" }}
                 type="checkbox"
@@ -79,13 +86,13 @@ const Home = () => {
                   style={{ fontSize: "15px" }}
                   className="text-xl text-black   font-bold"
                 >
-                  Phone Number :
+                  Total Amount :
                 </span>
               </label>
               <input
                 style={{ marginTop: "-10px" }}
                 type="text"
-                placeholder="Enter Phone Number.."
+                placeholder="Enter Amount.."
                 className="w-full max-w-xs font-bold outline outline-fuchsia-500 outline-1  py-2 px-5  rounded-md focus:ring-2 focus:ring-fuchsia-500"
                 required
               />
@@ -96,7 +103,7 @@ const Home = () => {
                   style={{ fontSize: "15px" }}
                   className="text-xl text-black   font-bold"
                 >
-                  Prarts Name :
+                  Parents Name :
                 </span>
               </label>
               <input
@@ -130,13 +137,13 @@ const Home = () => {
                   style={{ fontSize: "15px" }}
                   className="text-xl text-black   font-bold"
                 >
-                  Total Gast :
+                  Advanced Payment :
                 </span>
               </label>
               <input
                 style={{ marginTop: "-10px" }}
                 type="text"
-                placeholder="Enter Total Gast.."
+                placeholder="Enter Total Payment.."
                 className="w-full max-w-xs font-bold outline outline-fuchsia-500 outline-1  py-2 px-5  rounded-md focus:ring-2 focus:ring-fuchsia-500"
                 required
               />
@@ -147,13 +154,13 @@ const Home = () => {
                   style={{ fontSize: "15px" }}
                   className="text-xl text-black   font-bold"
                 >
-                  Total Rome :
+                  Due Amount :
                 </span>
               </label>
               <input
                 style={{ marginTop: "-10px" }}
                 type="text"
-                placeholder="Enter Total Rome.."
+                placeholder="Enter Due Amount.."
                 className="w-full max-w-xs font-bold outline outline-fuchsia-500 outline-1  py-2 px-5  rounded-md focus:ring-2 focus:ring-fuchsia-500"
                 required
               />
@@ -198,16 +205,19 @@ const Home = () => {
                   style={{ fontSize: "15px" }}
                   className="text-xl text-black   font-bold"
                 >
-                  Phone Number :
+                  Customer Status :
                 </span>
               </label>
-              <input
-                style={{ marginTop: "-10px" }}
-                type="text"
-                placeholder="Enter Phone Number.."
-                className="w-full max-w-xs font-bold outline outline-fuchsia-500 outline-1  py-2 px-5  rounded-md focus:ring-2 focus:ring-fuchsia-500"
-                required
-              />
+              <div
+                style={{
+                  marginTop: "-15px",
+                }}
+              >
+                <input type="checkbox" name="" id="" />
+                <label htmlFor=""> Non-Copotate</label> <br />
+                <input type="checkbox" name="" id="" />
+                <label htmlFor=""> Copotate</label>
+              </div>
             </div>
             <div className="w-full" style={{ marginTop: "-30px" }}>
               <label className="label">
@@ -215,17 +225,40 @@ const Home = () => {
                   style={{ fontSize: "15px" }}
                   className="text-xl text-black   font-bold"
                 >
-                  Phone Number :
+                  Nationatity :
                 </span>
               </label>
-              <input
-                style={{ marginTop: "-10px" }}
-                type="text"
-                placeholder="Enter Phone Number.."
+              {/* <select name="" id="">
+              <option value="">Hello</option>
+              <option value="">Hello</option>
+             </select> */}
+              <select
+                name=""
+                id=""
                 className="w-full max-w-xs font-bold outline outline-fuchsia-500 outline-1  py-2 px-5  rounded-md focus:ring-2 focus:ring-fuchsia-500"
-                required
-              />
+              >
+                <option value="">Bangladesh</option>
+                <option value="">India</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+                <option value="">Afa</option>
+              </select>
             </div>
+          </div>
+          <div className="grid grid-cols-4 mt-5">
             <div className="w-full" style={{ marginTop: "-30px" }}>
               <label className="label">
                 <span
@@ -236,7 +269,7 @@ const Home = () => {
                 </span>
               </label>
               <input
-                style={{ marginTop: "-10px" }}
+                style={{ marginTop: "-10px", width: "290px" }}
                 type="text"
                 placeholder="Enter Total Gast.."
                 className="w-full max-w-xs font-bold outline outline-fuchsia-500 outline-1  py-2 px-5  rounded-md focus:ring-2 focus:ring-fuchsia-500"
@@ -253,47 +286,27 @@ const Home = () => {
                 </span>
               </label>
               <input
-                style={{ marginTop: "-10px" }}
+                style={{ marginTop: "-10px", width:"290px" }}
                 type="text"
                 placeholder="Enter Total Room.."
                 className="w-full max-w-xs font-bold outline outline-fuchsia-500 outline-1  py-2 px-5  rounded-md focus:ring-2 focus:ring-fuchsia-500"
                 required
               />
             </div>
-            <div className="w-full" style={{ marginTop: "-30px" }}>
-              <label className="label">
-                <span
-                  style={{ fontSize: "15px" }}
-                  className="text-xl text-black   font-bold"
-                >
-                  Total Gast :
-                </span>
-              </label>
-              <input
-                style={{ marginTop: "-10px" }}
-                type="text"
-                placeholder="Enter Total Gast.."
-                className="w-full max-w-xs font-bold outline outline-fuchsia-500 outline-1  py-2 px-5  rounded-md focus:ring-2 focus:ring-fuchsia-500"
-                required
-              />
+            <div style={{
+              marginTop: "-20px",
+            }}>
+              <label htmlFor="" className="font-bold">Textarea :</label> <br />
+              <textarea style={{ marginTop: "-1px", width:"680px" }} 
+                className="textarea outline outline-1 outline-fuchsia-500 rounded-md focus:ring-2 focus:ring-pink-500  w-full max-w-md textarea-primary mt-3"
+                name=""
+                id=""
+                cols="40"
+                rows=""
+              ></textarea>
             </div>
-            <div className="w-full" style={{ marginTop: "-30px" }}>
-              <label className="label">
-                <span
-                  style={{ fontSize: "15px" }}
-                  className="text-xl text-black   font-bold"
-                >
-                  Total Rome :
-                </span>
-              </label>
-              <input
-                style={{ marginTop: "-10px" }}
-                type="text"
-                placeholder="Enter Total Rome.."
-                className="w-full max-w-xs font-bold outline outline-fuchsia-500 outline-1  py-2 px-5  rounded-md focus:ring-2 focus:ring-fuchsia-500"
-                required
-              />
-            </div>
+          </div>
+          <div className="grid grid-cols-2">
             <div className="lg:text-center lg:mt-4">
               <h1
                 style={{ fontSize: "15px" }}
@@ -323,6 +336,104 @@ const Home = () => {
                 name="date"
                 required
               />
+            </div>
+          </div>
+          <div className="grid grid-cols-10  gap-5 mt-10 ">
+            <div
+              style={{
+                padding: "50px",
+              }}
+              className="m-auto h-20 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-white">101</h1>
+            </div>
+            <div
+              style={{
+                padding: "50px",
+              }}
+              className=" h-20 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className=" text-white">102</h1>
+            </div>
+            <div
+              style={{
+                padding: "50px",
+              }}
+              className=" h-20 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className=" text-white">103</h1>
+            </div>
+            <div
+              style={{
+                padding: "50px",
+              }}
+              className=" h-20 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">104</h1>
+            </div>
+            <div
+              style={{
+                padding: "50px",
+              }}
+              className=" h-20 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">105</h1>
+            </div>
+            <div
+              style={{
+                padding: "50px",
+              }}
+              className=" h-20 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">106</h1>
+            </div>
+            <div
+              style={{
+                padding: "50px",
+              }}
+              className=" h-20 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">107</h1>
+            </div>
+            <div
+              style={{
+                padding: "50px",
+              }}
+              className=" h-20 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                108
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "50px",
+              }}
+              className=" h-20 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                109
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "50px",
+              }}
+              className=" h-20 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                110
+              </h1>
             </div>
           </div>
           <div className="card-actions justify-center">
