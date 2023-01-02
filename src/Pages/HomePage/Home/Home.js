@@ -6,7 +6,7 @@ const Home = () => {
     <div className="flex justify-between items-center px-5 relative" id="bgcolor">
       <div className="form-control w-full ">
         <form>
-          <h1 className="text-xl lg:text-3xl my-5 font-bold lg:text-center text-orange-500">
+          <h1 className="hotelBooking text-xl lg:text-3xl my-5 font-bold lg:text-center">
             Hotel Booking Now
           </h1>
           <h2 className="text-center text-2xl font-bold text-purple-500 mb-5">

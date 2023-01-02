@@ -5,8 +5,8 @@ import "./Navbar.css";
 const Navbar = () => {
     const menu = <>
         <li><Link to="/">Room-Booking</Link></li>
-        <li><Link to="/about">Present-Booking</Link></li>
-        <li><Link to="/service">Booking-List</Link></li>
+        <li><Link to="/Present-Booking">Present-Booking</Link></li>
+        <li><Link to="/Booking-List">Booking-List</Link></li>
         <li><Link to="/Dashboard">Dashboard</Link></li>
     </>
   return (
