@@ -3,14 +3,14 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="flex justify-between items-center px-5 relative">
+    <div className="flex justify-between items-center px-5 relative" id="bgcolor">
       <div className="form-control w-full ">
         <form>
           <h1 className="text-xl lg:text-3xl my-5 font-bold lg:text-center text-orange-500">
             Hotel Booking Now
           </h1>
-          <h2 className="text-center text-xl  text-purple-500 mb-5">
-            Hotel Booking Now
+          <h2 className="text-center text-2xl font-bold text-purple-500 mb-5">
+            Rajasthan Hotel
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             <div className="w-full">
@@ -19,7 +19,7 @@ const Home = () => {
                   style={{ fontSize: "15px" }}
                   className="text-xl text-black   font-bold"
                 >
-                  Gast Name :
+                  Gust Name :
                 </span>
               </label>
               <input
@@ -70,15 +70,6 @@ const Home = () => {
                 <input type="checkbox" name="check2" id="check6" />
                 <label htmlFor="check6"> Family Room</label>
               </div>
-              {/* <input
-                style={{ marginTop: "-10px" }}
-                type="checkbox"
-                // name="phone"
-                value="single Room"
-                // placeholder="Enter Phone Number.."
-                className=""
-                required
-              /> */}
             </div>
             <div className="w-full">
               <label className="label">
@@ -213,10 +204,10 @@ const Home = () => {
                   marginTop: "-15px",
                 }}
               >
-                <input type="checkbox" name="" id="" />
-                <label htmlFor=""> Non-Copotate</label> <br />
-                <input type="checkbox" name="" id="" />
-                <label htmlFor=""> Copotate</label>
+                <input type="checkbox" name="copotate1" id="copotate" />
+                <label htmlFor="copotate1"> Non-Copotate</label> <br />
+                <input type="checkbox" name="copotate2" id="copotate" />
+                <label htmlFor="copotate2"> Copotate</label>
               </div>
             </div>
             <div className="w-full" style={{ marginTop: "-30px" }}>
@@ -286,18 +277,24 @@ const Home = () => {
                 </span>
               </label>
               <input
-                style={{ marginTop: "-10px", width:"290px" }}
+                style={{ marginTop: "-10px", width: "290px" }}
                 type="text"
                 placeholder="Enter Total Room.."
                 className="w-full max-w-xs font-bold outline outline-fuchsia-500 outline-1  py-2 px-5  rounded-md focus:ring-2 focus:ring-fuchsia-500"
                 required
               />
             </div>
-            <div style={{
-              marginTop: "-20px",
-            }}>
-              <label htmlFor="" className="font-bold">Textarea :</label> <br />
-              <textarea style={{ marginTop: "-1px", width:"680px" }} 
+            <div
+              style={{
+                marginTop: "-20px",
+              }}
+            >
+              <label htmlFor="" className="font-bold">
+                Textarea :
+              </label>{" "}
+              <br />
+              <textarea
+                style={{ marginTop: "-1px", width: "680px" }}
                 className="textarea outline outline-1 outline-fuchsia-500 rounded-md focus:ring-2 focus:ring-pink-500  w-full max-w-md textarea-primary mt-3"
                 name=""
                 id=""
@@ -317,8 +314,8 @@ const Home = () => {
               <input
                 style={{ marginTop: "-3px" }}
                 className="font-bold  outline-fuchsia-500 py-2 px-5  rounded-md  focus:ring-pink-500 bg-fuchsia-500 text-white"
-                type="date"
-                name="date"
+                type="datetime-local"
+                name="datetime-local"
                 required
               />
             </div>
@@ -332,8 +329,8 @@ const Home = () => {
               <input
                 style={{ marginTop: "-3px" }}
                 className="font-bold  outline-fuchsia-500 py-2 px-5  rounded-md  focus:ring-pink-500 bg-fuchsia-500 text-white"
-                type="date"
-                name="date"
+                type="datetime-local"
+                name="datetime-local"
                 required
               />
             </div>
@@ -341,72 +338,72 @@ const Home = () => {
           <div className="grid grid-cols-10  gap-5 mt-10 ">
             <div
               style={{
-                padding: "50px",
+                padding: "10px",
               }}
-              className="m-auto h-20 w-20 rounded-md "
+              className="h-10 w-20 rounded-md "
               id="color1"
             >
-              <h1 className="text-white">101</h1>
+              <h1 className="text-center text-white">101</h1>
             </div>
             <div
               style={{
-                padding: "50px",
+                padding: "10px",
               }}
-              className=" h-20 w-20 rounded-md "
+              className=" h-10 w-20 rounded-md "
               id="color1"
             >
-              <h1 className=" text-white">102</h1>
+              <h1 className="text-center text-white">102</h1>
             </div>
             <div
               style={{
-                padding: "50px",
+                padding: "10px",
               }}
-              className=" h-20 w-20 rounded-md "
+              className=" h-10 w-20 rounded-md "
               id="color1"
             >
-              <h1 className=" text-white">103</h1>
+              <h1 className="text-center text-white">103</h1>
             </div>
             <div
               style={{
-                padding: "50px",
+                padding: "10px",
               }}
-              className=" h-20 w-20 rounded-md "
+              className=" h-10 w-20 rounded-md "
               id="color1"
             >
               <h1 className="text-center text-white">104</h1>
             </div>
             <div
               style={{
-                padding: "50px",
+                padding: "10px",
               }}
-              className=" h-20 w-20 rounded-md "
+              className=" h-10 w-20 rounded-md "
               id="color1"
             >
               <h1 className="text-center text-white">105</h1>
             </div>
             <div
               style={{
-                padding: "50px",
+                padding: "10px",
               }}
-              className=" h-20 w-20 rounded-md "
+              className=" h-10 w-20 rounded-md "
               id="color1"
             >
               <h1 className="text-center text-white">106</h1>
             </div>
             <div
               style={{
-                padding: "50px",
+                padding: "10px",
               }}
-              className=" h-20 w-20 rounded-md "
+              className=" h-10 w-20 rounded-md "
               id="color1"
             >
               <h1 className="text-center text-white">107</h1>
             </div>
             <div
               style={{
-                padding: "50px",
+                padding: "10px",
               }}
-              className=" h-20 w-20 rounded-md "
+              className=" h-10 w-20 rounded-md "
               id="color1"
             >
               <h1 className="flex justify-center items-center text-white">
@@ -415,9 +412,9 @@ const Home = () => {
             </div>
             <div
               style={{
-                padding: "50px",
+                padding: "10px",
               }}
-              className=" h-20 w-20 rounded-md "
+              className=" h-10 w-20 rounded-md "
               id="color1"
             >
               <h1 className="flex justify-center items-center text-white">
@@ -426,9 +423,393 @@ const Home = () => {
             </div>
             <div
               style={{
-                padding: "50px",
+                padding: "10px",
               }}
-              className=" h-20 w-20 rounded-md "
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                110
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className="h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">101</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">102</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">103</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">104</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">105</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">106</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">107</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                108
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                109
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                110
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className="h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">101</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">102</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">103</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">104</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">105</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">106</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">107</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                108
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                109
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                110
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className="h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">101</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">102</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">103</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">104</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">105</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">106</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">107</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                108
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                109
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                110
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className="h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">101</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">102</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">103</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">104</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">105</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">106</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="text-center text-white">107</h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                108
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
+              id="color1"
+            >
+              <h1 className="flex justify-center items-center text-white">
+                109
+              </h1>
+            </div>
+            <div
+              style={{
+                padding: "10px",
+              }}
+              className=" h-10 w-20 rounded-md "
               id="color1"
             >
               <h1 className="flex justify-center items-center text-white">
@@ -441,7 +822,7 @@ const Home = () => {
               className="btn mt-10 w-full max-w-xs hover:text-black bg-gradient-to-r from-fuchsia-500 via-purple-800 to-pink-500 text-white"
               type="submit"
             >
-              Confirm Now
+              Booking Now
             </button>
           </div>
         </form>

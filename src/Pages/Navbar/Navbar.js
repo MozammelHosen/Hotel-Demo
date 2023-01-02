@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
     const menu = <>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/service">Service</Link></li>
-        <li><Link to="/skill">Skill</Link></li>
+        <li><Link to="/">Room-Booking</Link></li>
+        <li><Link to="/about">Present-Booking</Link></li>
+        <li><Link to="/service">Booking-List</Link></li>
+        <li><Link to="/Dashboard">Dashboard</Link></li>
     </>
   return (
-    <div className="navbar bg-purple-500 text-white font-serif text-2xl">
+    <div className="navbar bg-purple-500 text-white font-serif text-xl">
       <div className="navbar-start text-white">
         <div className="dropdown ">
           <label tabIndex={0} className="btn btn-ghost lg:hidden ">
@@ -30,14 +31,14 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 bg-purple-500"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52 bg-purple-500"
           >
             {
                 menu
             }
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <Link id="btn1" className="btn btn-ghost normal-case text-blue-500 text-xl">JaraSoft-H</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -47,7 +48,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Get started</a>
+        <Link className="btn">Get started</Link>
       </div>
     </div>
   );
